@@ -9,7 +9,7 @@ const GetLibros = () => {
   const localURL = "http://localhost:4000/libros";
 
   useEffect(() => {
-    fetch(localURL || url , {
+    fetch(url || localURL , {
       headers: {
         "ngrok-skip-browser-warning": "true",
       },
